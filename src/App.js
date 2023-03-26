@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import SearchBox from './components/search-project-page/searchBox';
+import SignUpPage from './pages/signUpPage';
+import LaunchCampaign from './pages/launchCampaign';
+import MainNavBar from './components/navigation/mainNavbar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <MainNavBar></MainNavBar>
+      {/*<SearchBox></SearchBox>*/}
+      {/*<SignUpPage></SignUpPage>*/}
+      {/*<LaunchCampaign></LaunchCampaign>*/}
+    </React.Fragment>
+
   );
 }
 

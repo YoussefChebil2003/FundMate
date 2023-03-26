@@ -1,0 +1,80 @@
+#step-title{
+    margin-bottom: 50px;
+}
+
+#fundrasing-options{
+    margin-top: 50px;
+    display: flex !important;
+    gap:30px !important;
+}
+
+#fundraising-options-btn{ 
+    margin-left: 30px !important;
+}
+
+#left-content{
+    margin-left: 80px;
+}
+
+#mdb-left-col{
+    display: flex;
+    flex-direction: column;
+    margin-top:150px;
+    gap:50px;
+}
+
+.upload-box{
+    padding: 1.5em;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 15px;
+}
+
+.uploads{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.campaign-bio{
+    width: 400px;
+    height: 200px;
+}
+
+#form-row{
+    display: flex;
+    gap: 30px;
+}
+
+#right-col{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#left-col{
+    padding-left: 3em;
+}
+
+#step-nav-div{
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+    display: flex;
+    gap: 30px;
+    align-content: right;
+}
+
+#mdb-card{
+    justify-content: center;
+}
+
+#loading-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 5em;
+}
