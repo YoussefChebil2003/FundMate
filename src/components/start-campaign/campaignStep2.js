@@ -16,15 +16,18 @@ import UploadButton from "./uploadImageBox";
 import addPhotoIcon from "./../../assets/icon/addPhoto.png";
 import addVideo from "./../../assets/icon/addVideo.png";
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { Link } from "react-router-dom";
+import MainNavBar from "../navigation/mainNavbar";
 
 function step2() {
     return (
         <div>
+            <MainNavBar></MainNavBar>
             <MDBContainer fluid id='mdb-container'>
             <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
                 <MDBCardBody id='mdb-cardbody'>
-                    <MDBRow>
-                        <MDBCol id="left-col" md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column'>
+                    <MDBRow id="mdb-row">
+                        <MDBCol id="mdb-left-col">
                             <p id="step-title" className=' h1 fw-bold'>Step 2: <br></br> Portray your Business</p>
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
                                 <h5 style={{fontWeight: "bold"}}>Business Name</h5>
@@ -76,8 +79,12 @@ function step2() {
                                 </select>
                             </div>
                             <div id="step-nav-div">
-                                <MDBBtn id="step-nav-btn" className='mb-4' size='lg'>Back</MDBBtn>
-                                <MDBBtn id="step-nav-btn" className='mb-4' size='lg'>Next</MDBBtn>
+                                <Link to='/launch-campaign'>
+                                    <MDBBtn id="step-nav-btn" className='mb-4' size='lg'>Back</MDBBtn>
+                                </Link>
+                                <Link to='/campaign-step3'>
+                                    <MDBBtn id="step-nav-btn" className='mb-4' size='lg'>Next</MDBBtn>
+                                </Link>
                             </div>
                             
                         </MDBCol>

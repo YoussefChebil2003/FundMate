@@ -9,12 +9,13 @@ import SocialMediaBox from '../components/Profile/Boxes/SocialMediaBox/SocialMed
 import CredentialsProfileBox from '../components/Profile/Boxes/CredentialsProfileBox/CredentialsProfileBox';
 import ProjectStatusBox from '../components/Profile/Boxes/ProjectStatusBox/ProjectStatus';
 import ProfileHeaderBox from '../components/Profile/Boxes/ProfileHeaderBox/ProfileHeaderBox';
-
+import MainNavBar from '../components/navigation/mainNavbar';
 
 function ProfilePage() {
     return (
-        <div className="App">
-            <section style={{ backgroundColor: '#eee' }}>
+        <div className="Profile">
+            <MainNavBar></MainNavBar>
+            <section style={{ backgroundColor: "rgb(127,156,196)" }}>
                 <MDBContainer className="py-5">
                     <ProfileHeaderBox />  {/*Header of the profile page, gives page links*/}
                     <MDBRow>

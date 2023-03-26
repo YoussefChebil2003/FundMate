@@ -13,6 +13,7 @@ import "../stylesheets/css/main-navbar.css"
 function launchCampaign() {
     return (
         <div className='sign-up-page'>
+            <MainNavBar></MainNavBar>
             <CampaignStep1></CampaignStep1>
             {/*<CampaignStep2></CampaignStep2>*/}
             {/*<CampaignStep3></CampaignStep3>*/}

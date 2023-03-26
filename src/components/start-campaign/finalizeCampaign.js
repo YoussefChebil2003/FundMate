@@ -14,15 +14,17 @@ import {
 import "../../stylesheets/css/campaign.css"
 import TeamIcon from "./../../assets/icon/TeamIcon.png";
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import MainNavBar from "../navigation/mainNavbar";
 
 function FinalizeCampaign2(){
     return (
         <div>
+            <MainNavBar></MainNavBar>
             <MDBContainer fluid id='mdb-container'>
-            <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
+                <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
                 
-            </MDBCard>
-        </MDBContainer>
+                </MDBCard>
+            </MDBContainer>
         </div>
         
     );

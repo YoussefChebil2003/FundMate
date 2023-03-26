@@ -12,6 +12,8 @@ import {
     MDBCheckbox
 } from "mdb-react-ui-kit"
 import "../../stylesheets/css/campaign.css"
+import { Link } from "react-router-dom";
+import MainNavBar from "../navigation/mainNavbar";
 
 function step1() {
     return (
@@ -25,11 +27,15 @@ function step1() {
                             <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid/>
                         </MDBCol>
 
-                        <MDBCol id="mdb-left-col" md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
+                        <MDBCol id="mdb-right-col" md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
                             <h3>Choose a Fundraising service</h3>
                             <div id="fundrasing-options" className='mb-4'>
-                                <MDBBtn id="fundrasing-options-btn" className='mb-4' size='lg'>Donation</MDBBtn>
-                                <MDBBtn id="fundrasing-options-btn" className='mb-4' size='lg'>Investment</MDBBtn>
+                                <Link to='/campaign-step2'>
+                                    <MDBBtn id="fundrasing-options-btn" className='mb-4' size='lg'>Donation</MDBBtn>
+                                </Link>
+                                <Link to='/campaign-step2'>
+                                    <MDBBtn id="fundrasing-options-btn" className='mb-4' size='lg'>Investment</MDBBtn>
+                                </Link>
                             </div>
                         </MDBCol>
                     </MDBRow>
