@@ -1,0 +1,131 @@
+.chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.chatbot-button {
+    background-color: #fe8272;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-menu {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    background-color: #fff;
+    width: 300px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    padding: 5em;
+    border: solid #dc3545 2px;
+    border-radius: 10px;
+    background-color: #ffd8d3;
+    min-height: 400px;
+}
+
+.chatbot-header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+#close-chatbot-btn{
+    color: white;
+    background-color: #dc3545;
+    padding: 0.5em;
+    position: absolute;
+    right: 5px;
+    top:5px;
+}
+
+
+.chatbot-options {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chatbot-options li {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.chatbot-options li:hover {
+    background-color: white !important;
+    color: black;
+    border: solid white 2.5px;
+    padding: 0.5em;
+}
+
+.chatbot-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    
+    overflow-y: auto;
+}
+
+.chatbot-dialog-header {
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-dialog-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chatbot-dialog-header button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.chatbot-dialog-content {
+    background-color: #fff;
+    width: 80%;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-dialog-content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chatbot-dialog-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}

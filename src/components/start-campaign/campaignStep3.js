@@ -16,11 +16,14 @@ import TeamIcon from "./../../assets/icon/TeamIcon.png";
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link } from "react-router-dom";
 import MainNavBar from "../navigation/mainNavbar";
+import FinEdBot from "../FinEdBot/FinEdBot"
+
 
 function step3() {
     return (
         <div>
             <MainNavBar></MainNavBar>
+            <FinEdBot></FinEdBot>
             <MDBContainer fluid id='mdb-container'>
             <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
                 <MDBCardBody id='mdb-cardbody'>
@@ -33,10 +36,10 @@ function step3() {
                         <MDBCol id="right-col" md='10' lg='6' className='order-1 order-lg-2 d-flex '>
                             
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
-                                <h5 style={{fontWeight: "bold"}}>Team Name</h5>
+                                <h4 style={{fontWeight: "bold"}}>Team Name</h4>
                                 <MDBInput label='team name' id='form1' type='text' className='w-100'/>
                             </div>
-                            <h5 style={{fontWeight: "bold"}}>Team Description</h5>
+                            <h4 style={{fontWeight: "bold"}}>Team Description</h4>
                             <div className='d-flex flex-row align-items-center mb-4 '>
                                 <textarea label='campaign description' id='form1' placeholder="describe your team" className='campaign-bio'/>
                             </div>
@@ -44,7 +47,7 @@ function step3() {
                                 <Link to='/campaign-step2'>
                                     <MDBBtn id="step-nav-btn" className='mb-4' size='lg'>Back</MDBBtn>
                                 </Link>
-                                <Link to='/campaign-step4'>
+                                <Link to='/campaign-step4-donators'>
                                     <MDBBtn id="step-nav-btn" className='mb-4' size='lg'>Next</MDBBtn>
                                 </Link>
                             </div>

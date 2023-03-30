@@ -11,46 +11,49 @@ import {
     MDBIcon,
     MDBCheckbox
 } from "mdb-react-ui-kit"
-import "../../stylesheets/css/campaign.css"
 import UploadButton from "./uploadImageBox";
 import addPhotoIcon from "./../../assets/icon/addPhoto.png";
 import addVideo from "./../../assets/icon/addVideo.png";
 import './../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link } from "react-router-dom";
 import MainNavBar from "../navigation/mainNavbar";
+import "../../stylesheets/css/campaign.css"
+import FinEdBot from "../FinEdBot/FinEdBot"
+
 
 function step2() {
     return (
         <div>
             <MainNavBar></MainNavBar>
+            <FinEdBot></FinEdBot>
             <MDBContainer fluid id='mdb-container'>
             <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
                 <MDBCardBody id='mdb-cardbody'>
-                    <MDBRow id="mdb-row">
-                        <MDBCol id="mdb-left-col">
+                    <div id="mdb-row">
+                        <div id="mdb-left-col">
                             <p id="step-title" className=' h1 fw-bold'>Step 2: <br></br> Portray your Business</p>
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
-                                <h5 style={{fontWeight: "bold"}}>Business Name</h5>
+                                <h4 style={{fontWeight: "bold"}}>Business Name</h4>
                                 <MDBInput label='business name' id='form1' type='text' className='w-100'/>
                             </div>
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
-                                <h5 style={{fontWeight: "bold"}}>Campaign Title</h5>
+                                <h4 style={{fontWeight: "bold"}}>Campaign Title</h4>
                                 <MDBInput label='campaign title' id='form1' type='text' className='w-100'/>
                             </div>
-                            <h5 style={{fontWeight: "bold"}}>Campaign Description</h5>
+                            <h4 style={{fontWeight: "bold"}}>Campaign Description</h4>
                             <div className='d-flex flex-row align-items-center mb-4 '>
                                 <textarea label='campaign description' id='form1' placeholder="describe your campaign" className='campaign-bio'/>
                             </div>
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
-                                <h5 style={{fontWeight: "bold"}}>Location</h5>
-                                <MDBInput label='Your Name' id='form1' type='text' className='w-100'/>
+                                <h4 style={{fontWeight: "bold"}}>Location</h4>
+                                <MDBInput label='Location' id='form1' type='text' className='w-100'/>
                             </div>
                             
                             
-                        </MDBCol>
+                        </div>
 
-                        <MDBCol id="right-col" md='10' lg='6' className='order-1 order-lg-2 d-flex '>
-                            <h5 style={{fontWeight: "bold"}}>Illustrate the campaign</h5>
+                        <div id="right-col">
+                            <h4 style={{fontWeight: "bold"}}>Illustrate the campaign</h4>
                             <div class="uploads">
                                 <div>
                                     <h6 style={{fontWeight: "bold"}}>Campaign Image</h6>
@@ -68,7 +71,7 @@ function step2() {
                                 </div>            
                             </div>
                             <div>
-                                <h5 style={{fontWeight: "bold"}}>Categories</h5>
+                                <h4 style={{fontWeight: "bold"}}>Categories</h4>
                                 <p>To help backers find your campaign, select a category that best suits your project</p>
                                 <select style={{width: "400px"}} id="form-dropdown" class="form-select" aria-label="Default select example">
                                     <option selected>Open this select menu</option>
@@ -87,8 +90,8 @@ function step2() {
                                 </Link>
                             </div>
                             
-                        </MDBCol>
-                    </MDBRow>
+                        </div>
+                    </div>
                 </MDBCardBody>
             </MDBCard>
         </MDBContainer>

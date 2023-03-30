@@ -18,10 +18,13 @@ import ProfilePage from './pages/ProfilePage';
 
 import CampaignStep2 from './components/start-campaign/campaignStep2'
 import CampaignStep3 from './components/start-campaign/campaignStep3'
-import CampaignStep4 from './components/start-campaign/campaignStep4'
+import CampaignStep4Donators from './components/start-campaign/campaignStep4Donators'
+import CampaignStep4Investors from './components/start-campaign/campaignStep4Investors'
 import CampaignStep5 from './components/start-campaign/campaignStep5'
 import VerifyingBP from './components/start-campaign/verifyingBP';
 import FinalizeCampaign from './components/start-campaign/finalizeCampaign';
+import AboutUs from './pages/aboutUs'
+import LoginPage from './pages/loginPage';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,10 @@ const router = createBrowserRouter([
   {
     path: "/sign-up",
     element: <SignUpPage/>,
+  },
+  {
+    path: "/login",
+    element: <LoginPage/>,
   },
   {
     path: "/launch-campaign",
@@ -43,6 +50,10 @@ const router = createBrowserRouter([
     path: "/search",
     element: <SearchHome/>,
   },
+  {
+    path: "/about",
+    element: <AboutUs/>,
+  },
   {/*----------------------------- to be changed ----------------------------------*/}
   ,{
     path: "/campaign-step2",
@@ -53,9 +64,14 @@ const router = createBrowserRouter([
     element: <CampaignStep3/>,
   },
   ,{
-    path: "/campaign-step4",
-    element: <CampaignStep4/>,
+    path: "/campaign-step4-donators",
+    element: <CampaignStep4Donators/>,
   },
+  {
+    path: "/campaign-step4-investors",
+    element: <campaignStep4Investors/>,
+  },
+  ,
   ,{
     path: "/campaign-step5",
     element: <CampaignStep5/>,

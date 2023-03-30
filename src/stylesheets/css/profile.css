@@ -1,0 +1,49 @@
+
+#investor-info{
+    display: flex;
+}
+
+/*------------------------------------------------------------------------------analytics------------------------------------------------------------------------*/
+
+#info-boxes{
+    margin: 0px 0px 0px 0px !important;
+    width: 200px;
+    height: 150px;
+}
+
+#mdb-row, #mdb-row-analytics-box{
+    display: flex;
+    gap: 15px;
+}
+
+#mdb-col{
+    display: flex;
+    flex-direction: column;
+    gap: 15px !important;
+}
+
+#mdb-col-analytics-box{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px !important;
+}
+
+#goto-investment-portfolio-btn{
+
+}
+
+#investment-portfolio-teaser{
+    min-width: 400px;
+    height: 452px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#analytics-box-icon{
+    width: 50px;
+    height: 50px;
+}

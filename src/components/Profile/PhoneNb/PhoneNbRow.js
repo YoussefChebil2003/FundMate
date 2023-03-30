@@ -7,7 +7,7 @@ const PhoneNbRow = () => {
             <MDBCardText>Mobile Phone</MDBCardText>
           </MDBCol>
           <MDBCol sm="9">
-            <MDBCardText className='text-muted'>(+216) 53 499 144</MDBCardText>
+            <MDBCardText className='text-muted'>(+216) 12 345 678</MDBCardText>
           </MDBCol>  
       </MDBRow>
     );

@@ -1,10 +1,19 @@
 .navbar{
+    position: relative;
     display: flex;
     width: 100%;
-    background-color: white;
-    border: solid black 2px;
     height: 10vh;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    padding-top: 5px;
     justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 999;
+    background-color: #366775;
 }
 
 li{
@@ -13,40 +22,117 @@ li{
 }
 
 .left-nav{
+    position: absolute;
+    left: 10px;
+    top: 10px;
     display: flex;
-    height: 10vh;
+    height: 8vh;
 }
 
-.right-nav{
-    display: flex;
-    height: 10vh;
+.left-nav h1{
+    color: white;
+}
+
+.left-nav h1:hover{
+    color: white;
 }
 
 .auth-info{
     display: flex;
     gap: 10px;
     margin-right: 25px;
+    align-items: center;
+}
+
+.profile-img{
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+}
+
+.profile-img:hover{
+    height: 51px;
+    box-shadow: 51px;
 }
 
 .page-options{
+    position: absolute;
+    left: 68vh;
+    top:10px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 65px;
     margin-right: 50px;
-    height: 8vh;
-    border: solid black 5px;
+    height: 9vh;
     text-align: center;
     padding: 0.3em;
 }
 
+.page-options li{
+    align-self: center;
+}
+
+#link-nav{
+    color: white;
+}
+
+#link-nav:hover{
+    background-color: white;
+    color: black;
+    padding: 0.7em;
+}
+
+.auth-div{
+    display: flex;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
 .page-options a{
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.toggle-profile{
-    display: none;
+.auth, .auth-info, .nav-btns, .page-options, .left-nav{
+
 }
 
-.toggle-profile{
+.auth-info img{
+    max-height: 85%;
+    margin-top: 10px;
+}
 
+.nav-btns-div{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn{
+    align-items: center;
+    border-radius: 0px;
+    background-color: #366775;
+    border: solid #366775 2.5px;
+    padding: 1em;
+    color: white;
+}
+
+
+#sign-up-btn{
+    background-color: #fe8272 !important;
+    border: solid #fe8272 2.5px;
+}
+
+#login-btn:hover{
+    background-color: white !important;
+    color: black;
+    border: solid white 2.5px;
+    padding: 0.7em;
+}
+
+#sign-up-btn:hover{
+    border: none;
+    color: white;
+    background-color: #fd998b !important;
 }

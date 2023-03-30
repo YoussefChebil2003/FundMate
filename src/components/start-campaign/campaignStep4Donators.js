@@ -18,11 +18,14 @@ import { Link } from "react-router-dom";
 import MainNavBar from "../navigation/mainNavbar";
 import perksImg1 from "../../assets/img/perks1.png"
 import perksImg2 from "../../assets/img/perks2.png"
+import FinEdBot from "../FinEdBot/FinEdBot"
+
 
 function step4() {
     return (
         <div>
             <MainNavBar></MainNavBar>
+            <FinEdBot></FinEdBot>
             <MDBContainer fluid id='mdb-container'>
             <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
                 <MDBCardBody id='mdb-cardbody'>
@@ -41,14 +44,14 @@ function step4() {
                             </div>
                         </MDBCol>
 
-                        <MDBCol id="right-col" md='10' lg='6' className='order-1 order-lg-2 d-flex '>
+                        <MDBCol id="mdb-right-col" md='10' lg='6' className='order-1 order-lg-2 d-flex '>
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
-                                <h5 style={{fontWeight: "bold"}}>Campaign Goal Amount & Currency</h5>
-                                <MDBInput label='campaign title' id='form1' type='text' className='w-100'/>
+                                <h4 style={{fontWeight: "bold"}}>Campaign Goal Amount & Currency</h4>
+                                <MDBInput label='' id='form1' type='text' className='w-100'/>
                             </div>
                             <div id="form-row" className='d-flex flex-row align-items-center mb-4 '>
-                                <h5 style={{fontWeight: "bold"}}>Campaign Duration</h5>
-                                <MDBInput label='campaign title' id='form1' type='text' className='w-100'/>
+                                <h4 style={{fontWeight: "bold"}}>Campaign Duration</h4>
+                                <MDBInput label='' id='form1' type='text' className='w-100'/>
                             </div>
                             <div id="step-nav-div">
                                 <Link to='/campaign-step3'>

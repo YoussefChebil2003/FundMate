@@ -9,7 +9,7 @@ const LeftProfileBox = () => {
             <MDBCardBody className="text-center">
                 <ProfilePhoto/> 
                 <FullName/>
-                <p className="text-muted mb-1">Full Stack Developer</p>
+                <p className="text-muted mb-1">Investor</p>
                 <p className="text-muted mb-4"><Address/></p>
                 <div className="d-flex justify-content-center mb-2">
                     <MDBBtn>Follow</MDBBtn>

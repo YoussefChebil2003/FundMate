@@ -1,8 +1,13 @@
 import React from "react";
-import anonymousIcon from "../../assets/icon/anonymous.png";
+import anonymousIcon from "../../assets/icon/profile-picWhite.png";
 import YoussefPhoto from "../../assets/img/Youssef Chebil photo.jpg"
 import "../../stylesheets/css/main-navbar.css"
-import { MDBBtn } from "mdb-react-ui-kit";
+import {
+    MDBContainer,
+    MDBNavbar,
+    MDBNavbarBrand,
+    MDBBtn,
+} from 'mdb-react-ui-kit';
 import { Link } from "react-router-dom";
 
 class Person{
@@ -21,47 +26,43 @@ class MainNavBar extends React.Component{
         Person: this.Anonymous,
         shows:false,
     };
-    handleClick=()=>{
-        if (this.state.shows == false)
-            this.setState({Person: this.Youssef, shows: true})
-        else    
-            this.setState({Person: this.Anonymous, shows: false})
-    }
     render(){
         return (
-            <div className="navbar">
-                <div className="left-nav">
-                    <Link to="/">
-                        <h1>FundMate</h1>
-                    </Link>
-                </div>
-                <div className="right-nav">
-                    <ul className="page-options">
-                        <li><Link to='/search'>Search</Link></li>
-                        <li><Link to='/launch-campaign'>Launch Campaign</Link></li>
-                        <li><Link to=''>About Us</Link></li>
-                    </ul>
-                    <div className="auth-info">
-                        <Link to='/profile'>
-                            <img style={{borderRadius: "50%", height: "50px", width:"50px"}} src={this.state.Person.imgSrc}></img>
-                            <h3>{this.state.Person.fullName}</h3>
-                        </Link>
-                        <div className="toggle-profile">
-                            <h2>Profession: {this.state.Person.profession}</h2>
-                            <p>Bio: {this.state.Person.bio}</p>
-                        </div>
-                        <Link to=''>
-                            <MDBBtn style={{height: "7.5vh"}} onClick={this.handleClick}>Login</MDBBtn>
-                        </Link>
-                        <Link to='/sign-up'>
-                            <MDBBtn style={{height: "7.5vh"}} >Sign Up</MDBBtn>
+            <>
+                <div className="navbar" light bgColor='light'>
+                    <div className="left-nav">
+                        <Link to="/">
+                            <h1>FundMate</h1>
                         </Link>
                     </div>
+                    
+                    <ul className="page-options">
+                        <li><Link id="link-nav" to='/search'>Marketplace</Link></li>
+                        <li><Link id="link-nav" to='/launch-campaign'>Launch Campaign</Link></li>
+                        <li><Link id="link-nav" to='/about'>About Us</Link></li>
+                    </ul>
+
+                    <div className="auth-div">
+                        <div className="auth-info">
+                            <Link to='/profile'>
+                                <img className="profile-img" src={this.state.Person.imgSrc}></img>
+                                    <h3>{this.state.Person.fullName}</h3>
+                            </Link>
+                        </div> 
+                        <div className="nav-btns-div">
+                            <Link to='/login'>
+                                <button id="login-btn" className="nav-btn">Login</button>
+                            </Link>
+                            <Link to='/sign-up'>
+                                <button className="nav-btn" id="sign-up-btn" >Sign Up</button>
+                            </Link>
+                        </div>
+                    </div>            
                 </div>
-            </div> 
+        </>
         )
         
     }
 }
 
-export default MainNavBar;
+export default MainNavBar;     

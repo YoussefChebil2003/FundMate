@@ -13,13 +13,14 @@ import {
     MDBCheckbox
 }
 from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 const signUp = () => {
     return (
-        <MDBContainer fluid id='mdb-container'>
-            <MDBCard id='mdb-card' className='text-black m-5' style={{ borderRadius: '25px' }}>
+        <MDBContainer style={{display:"flex", justifyContent:"center" }} fluid id='mdb-container' >
+            <MDBCard id='mdb-card' className='text-black m-5' style={{ width:"1200px", borderRadius: '25px'}}>
                 <MDBCardBody id='mdb-cardbody'>
-                    <MDBRow>
+                    <div id="mdb-row" style={{display:"flex !important"}}>
                         <MDBCol md='10' lg='6' className='order-2 order-lg-1 d-flex flex-column align-items-center'>
                             <p className='text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4'>Sign up</p>
 
@@ -46,14 +47,16 @@ const signUp = () => {
                             <div className='mb-4'>
                                 <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter'/>
                             </div>
-
-                            <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
+                            <Link to="/login">
+                                <MDBBtn className='mb-4' size='lg'>Register</MDBBtn>
+                            </Link>
+                            
                         </MDBCol>
 
                         <MDBCol md='10' lg='6' className='order-1 order-lg-2 d-flex align-items-center'>
                             <MDBCardImage src='https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp' fluid/>
                         </MDBCol>
-                    </MDBRow>
+                    </div>
                 </MDBCardBody>
             </MDBCard>
         </MDBContainer>

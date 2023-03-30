@@ -2,16 +2,6 @@
     margin-bottom: 50px;
 }
 
-#fundrasing-options{
-    margin-top: 50px;
-    display: flex !important;
-    gap:30px !important;
-}
-
-#fundraising-options-btn{ 
-    margin-left: 30px !important;
-}
-
 #left-content{
     margin-left: 80px;
 }
@@ -54,6 +44,7 @@
 }
 
 #right-col{
+    margin-left: 100px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -72,9 +63,66 @@
     align-content: right;
 }
 
-#mdb-card{
+
+
+/*-----------------------------------launch campaign-----------------------------*/
+
+#mdb-card-launch-campaign{
     justify-content: center;
+    width: 1000px !important;
+    background-color: #366775;
 }
+
+
+.launch-campaign-page{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+#fundrasing-options{
+    margin-top: 50px;
+    display: flex !important;
+    gap:30px !important;
+}
+
+#fundraising-options-btn{ 
+    
+    align-items: center;
+    background-color: #fe8272;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+
+#fundraising-options-btn:hover{ 
+    background-color: #fd998b;
+}
+
+
+#launch-campaign-design h3, #launch-campaign-design p{
+    color: white;
+}
+
+.spiral1-img{
+    position: absolute;
+    top: 0;
+    left:0;
+
+}
+
+.spiral2-img{
+    z-index: -1;
+    position: absolute;
+    right: 0;
+    top:0;
+}
+/*-----------------------------------verifying BP--------------------------------*/
+
 
 #loading-div{
     display: flex;
@@ -83,6 +131,24 @@
     align-self: center;
     padding: 5em;
 }
+
+/*-----------------------------------step4 investors--------------------------------*/
+
+#bp-div{
+    padding: 2em;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    border: solid 2px;
+    width: 600px;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/*-----------------------------------step4 donators--------------------------------*/
 
 #perks-div{
     padding: 2em;
@@ -95,4 +161,27 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+
+/*----------------------------------------step1-------------------------------------------*/
+
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+
+}
+
+
+/*-------------------------------------------step2-----------------------------------------------*/
+
+#mdb-row{
+    display: flex;
+    gap:50px;
 }
